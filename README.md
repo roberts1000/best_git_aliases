@@ -1,8 +1,6 @@
 # best-git-aliases
 best-git-aliases is a community-driven list of aliases for git.  If you have a new alias to share, submit a Pull Request!
 
-<br />
-
 ## Getting Started
 
 ### Show Currently Defined Aliases
@@ -10,6 +8,8 @@ There are many ways to see the list of currently defined aliases.
 ```
 git config --get-regexp alias
 git config --list
+git config --l
+git config --l | grep alias
 ```
 
 ### How to Add an Alias
@@ -30,14 +30,13 @@ The file is located in different places depending on your system:
 
 Once you have found the file, open it with the editor of your choice.  
 
-<br /><br />
-
 ## List of Aliases
 
 #### aliases
 List all currently defined aliases
 
-`git config --global alias.aliases 'config --get-regexp alias'`
+`git config --global alias.alias "! git config --get-regexp ^alias\. | sed -e s/^alias\.// -e s/\ /\ =\ /"`<br />
+`git config --global alias.alias 'config --get-regexp alias'`
 
 #### logg
 Display a simple log graphic log with branch names
