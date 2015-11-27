@@ -9,7 +9,7 @@ First, read the [Working With Aliases](working-with-aliases.md) section to under
 **alias name**<br />
 alias description
 
-`terminal command to add the alias`
+`terminal command to add the alias`<br />
 `optional variations of the terminal command`
 
 <br />
