@@ -28,9 +28,11 @@ Display a simple graphic log with branch names
 `git config --global alias.logg 'log --oneline --graph --decorate'`
 
 **state**<br />
+Show useful information about the state of the local repo relative to origin.
 
 `git config --global alias.state '!git fetch origin && git remote show origin && :'`
 
 **sync**<br />
+Remove dead remote branches from the local repo.  All branches deleted branches on the remote server, will still show up in the local repo when using commands like `branch` or aliases like `logg`.  `sync` removes the refs to deleted remote branches if they are no longer needed locally.
 
 `git config --global alias.sync '!git fetch origin && git remote prune origin && :'`
