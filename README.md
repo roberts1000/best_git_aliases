@@ -4,7 +4,7 @@ best-git-aliases is a curated collection of the useful aliases for git.  If you 
 <br />
 
 ## Getting Started
-First, read the [Working With Aliases](#working-with-aliases) section below to understand how to add, remove and list Git aliases.  Then, scroll down to [The List](#the-list) below and pick out your alises.  Each alias definition in the list includes
+First, read the [Working With Aliases](#working-with-aliases) section to understand how to add, remove and list Git aliases.  Then, scroll down to [The List](#the-list) pick out your aliases.  Each alias definition in the list includes
 
 ```
 1. alias name
@@ -13,35 +13,6 @@ First, read the [Working With Aliases](#working-with-aliases) section below to u
 ```
 
 <br />
-
-## Working With Aliases
-
-### Listing Aliases
-There are many ways to see the list of currently defined aliases.
-```
-git config --get-regexp '^alias\.'
-git config --list
-git config --l
-git config --l | grep alias
-```
-
-### Adding Aliases
-Aliases can be added by 1) executing a command in the terminal or 2) directly editing the `.gitconfig` file on your system.  
-
-**By Command**
-
-```
-git config --global alias.<alias-name-here> '<git-command(s)-to-alias-here>'
-```
-
-**Direct File Edit**
-
-The file is located in different places depending on your system:
-
-1. **Linux:** ~/.gitconfig
-2. **Windows 7:** C:\Users\\&lt;username-here&gt;\\.gitconfig
-
-Once you have found the file, open it with the editor of your choice.  
 
 ### Deleting Aliases
 Aliases can be deleted with:
