@@ -4,20 +4,13 @@ best-git-aliases is a curated collection of the useful aliases for git.  If you 
 <br />
 
 ## Getting Started
-First, read the [Working With Aliases](#working-with-aliases) section to understand how to add, remove and list Git aliases.  Then, scroll down to [The List](#the-list) pick out your aliases.  Each alias definition in the list includes
+First, read the [Working With Aliases](working-with-aliases.md) section to understand how to add, remove and list Git aliases.  Then, scroll down to [The List](#the-list) pick out your aliases.  Each alias definition in the list includes
 
 ```
 1. alias name
 2. alias description
 3. terminal command to add the alias
 ```
-
-<br />
-
-### Deleting Aliases
-Aliases can be deleted with:
-
-`git config --global --unset alias.<alias-name-here>`
 
 <br />
 
