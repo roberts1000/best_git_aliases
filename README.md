@@ -36,7 +36,7 @@ Once you have found the file, open it with the editor of your choice.
 List all currently defined aliases
 
 `git config --global alias.alias "! git config --get-regexp ^alias\. | sed -e s/^alias\.// -e s/\ /\ =\ /"`<br />
-`git config --global alias.alias 'config --get-regexp alias'`
+`git config --global alias.aliases config --get-regexp '^alias\.'`
 
 #### logg
 Display a simple log graphic log with branch names
