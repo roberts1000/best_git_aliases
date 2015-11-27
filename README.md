@@ -10,6 +10,7 @@ First, read the [Working With Aliases](working-with-aliases.md) section to under
 alias description
 
 `terminal command to add the alias`
+`optional variations of the terminal command`
 
 <br />
 
