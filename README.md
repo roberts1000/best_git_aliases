@@ -1,7 +1,7 @@
 # best-git-aliases
 best-git-aliases is a community-driven list of aliases for git.  If you have a new alias to share, submit a Pull Request!
 
-<br /><br />
+<br />
 
 ## Getting Started
 
