@@ -1,9 +1,9 @@
 # best-git-aliases
 best-git-aliases is a community-driven list of aliases for git.  If you have a new alias to share, submit a Pull Request!
 
-## Getting Started
+## Working With Aliases
 
-### Show Currently Defined Aliases
+### Listing Aliases
 There are many ways to see the list of currently defined aliases.
 ```
 git config --get-regexp alias
@@ -12,7 +12,7 @@ git config --l
 git config --l | grep alias
 ```
 
-### How to Add an Alias
+### Adding Aliases
 Aliases can be added to Git by 1) executing a command in the terminal or 2) directly editing the `.gitconfig` file on your system.  
 
 **By Command**
@@ -29,6 +29,11 @@ The file is located in different places depending on your system:
 2. **Windows 7:** C:\Users\ _username_\
 
 Once you have found the file, open it with the editor of your choice.  
+
+### Deleting Aliases
+Aliases can be deleted with:
+
+`git config --global --unset alias.<alias-name-here>`
 
 ## List of Aliases
 
