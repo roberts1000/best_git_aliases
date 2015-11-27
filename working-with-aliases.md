@@ -34,3 +34,8 @@ An example is
 ```
 logg = log --oneline --graph --decorate
 ```
+
+### Deleting Aliases
+Aliases can be deleted with:
+
+`git config --global --unset alias.<alias-name-here>`
