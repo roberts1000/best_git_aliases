@@ -16,28 +16,33 @@ alias description
 
 ## The List
 
-**alias**<br />
+#### alias
+
 List all currently defined Git aliases.
 
 `git config --global alias.alias "! git config --get-regexp ^alias\. | sed -e s/^alias\.// -e s/\ /\ =\ /"`<br />
 `git config --global alias.alias "config --get-regexp '^alias\.'"`
 
-**logg**<br />
+#### logg
+
 Display a simple graphic log with branch names
 
 `git config --global alias.logg 'log --oneline --graph --decorate'`
 
-**state**<br />
+#### state
+
 Show useful information about the state of the local repo relative to origin.
 
 `git config --global alias.state '!git fetch origin && git remote show origin && :'`
 
-**sync**<br />
+#### sync
+
 Remove dead remote branches from the local repo.  All branches deleted branches on the remote server, will still show up in the local repo when using commands like `branch` or aliases like `logg`.  `sync` removes the refs to deleted remote branches if they are no longer needed locally.
 
 `git config --global alias.sync '!git fetch origin && git remote prune origin && :'`
 
-**reebase-master**<br />
+#### reebase-master
+
 Rebase the current branch on top of master.  This command updates the local copy of `master` first, then rebases the current branch on top of `master`.  This saves developers form having to switch over to master, `git pull`, then switch back to the feature branch to finally perform the rebase.  The extra **e** in `reebase-master` is intentionally; it makes it easier to tab and use auto-completion after typing the second "e".
 
 `git config --global alias.reebase-master = '!git fetch origin master:master && git rebase master'`
