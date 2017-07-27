@@ -36,3 +36,9 @@ Show useful information about the state of the local repo relative to origin.
 Remove dead remote branches from the local repo.  All branches deleted branches on the remote server, will still show up in the local repo when using commands like `branch` or aliases like `logg`.  `sync` removes the refs to deleted remote branches if they are no longer needed locally.
 
 `git config --global alias.sync '!git fetch origin && git remote prune origin && :'`
+
+**reebase-master**<br />
+Rebase the current branch on top of master.  This command updates the local copy of `master` first, then rebases the current branch on top of `master`.  This saves developers form having to switch over to master, `git pull`, then switch back to the feature branch to finally perform the rebase.  The extra **e** in `reebase-master` is intentionally; it makes it easier to tab and use auto-completion after typing the second "e".
+
+`git config --global alias.reebase-master = !git fetch origin master:master && git rebase master`
+
