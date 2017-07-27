@@ -40,5 +40,5 @@ Remove dead remote branches from the local repo.  All branches deleted branches 
 **reebase-master**<br />
 Rebase the current branch on top of master.  This command updates the local copy of `master` first, then rebases the current branch on top of `master`.  This saves developers form having to switch over to master, `git pull`, then switch back to the feature branch to finally perform the rebase.  The extra **e** in `reebase-master` is intentionally; it makes it easier to tab and use auto-completion after typing the second "e".
 
-`git config --global alias.reebase-master = !git fetch origin master:master && git rebase master`
+`git config --global alias.reebase-master = '!git fetch origin master:master && git rebase master'`
 
